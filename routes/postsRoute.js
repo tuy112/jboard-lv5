@@ -1,6 +1,6 @@
 const express = require("express");
 // const { Posts } = require("../models");
-// const authMiddleware = require("../middlewares/authMiddleware");
+const authMiddleware = require("../middlewares/authMiddleware");
 const router = express.Router();
 
 // // 게시글 등록 [POST]
@@ -121,7 +121,7 @@ const router = express.Router();
 //   }
 // });
 
-const PostsController = require("../controller/postController");
+const PostsController = require("../controller/postsController");
 const postsController = new PostsController();
 
 router.post("/", authMiddleware, postsController.createBoard); // 보드 생성

@@ -1,6 +1,7 @@
 const express = require("express");
 // const jwt = require("jsonwebtoken");
 // const { Users } = require("../models");
+const authMiddleware = require("../middlewares/authMiddleware");
 const router = express.Router();
 
 // // 1. 유저 회원 가입 API [POST]

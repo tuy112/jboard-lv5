@@ -1,5 +1,5 @@
 const UserRepository = require("../repository/userRepository");
-const ApiError = require("../apierror");
+// const ApiError = require("../apierror");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 
